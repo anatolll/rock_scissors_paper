@@ -85,7 +85,7 @@ function winner(uint id) internal {
 }
 
 function seeWinner(uint id) public returns(address) {
-    if (rooms[id].draw == true) return "draw";
+    if (rooms[id].draw == true) return 0x0000000000000000000000000000000000000000;
     else return rooms[id].winner;
 }
 
